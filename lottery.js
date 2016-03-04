@@ -32,14 +32,21 @@ function payForTicket() {
 
 function winner(){
     moneyLeft = moneyLeft + lottoWins;
-    document.getElementById("money-left").innerHTML = moneyLeft
+    document.getElementById("money-left").innerHTML = moneyLeft;
+   
 }
 
 function lotteryGo() {
     payForTicket();
     var userNum = userNumberPicker();
     var lottoNum = lotteryNumberPicker();
-    if (didUserWin(userNum, lottoNum)) {
+    if (didUserWin(userNum, lottoNum ));
+    winner(); {
         
     }
+
+
 }
+document.getElementById("buybutton").addEventListener("click" , lotteryGo);
+
+ 
